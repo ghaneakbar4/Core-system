@@ -1,0 +1,13 @@
+digraph "product-application" {
+  node [shape="box",style="rounded",fontname="Helvetica",fontsize="14"]
+  edge [fontsize="10",fontname="Helvetica"]
+
+  // Node Definitions:
+  "com.core.banking.system:product-application-service:jar"[label=<product-application-service>]
+  "com.core.banking.system:product-domain-core:jar"[label=<product-domain-core>]
+  "com.core.banking.system:product-application:jar"[label=<product-application>]
+
+  // Edge Definitions:
+  "com.core.banking.system:product-application-service:jar" -> "com.core.banking.system:product-domain-core:jar"
+  "com.core.banking.system:product-application:jar" -> "com.core.banking.system:product-application-service:jar"
+}

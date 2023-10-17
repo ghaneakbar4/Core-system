@@ -1,0 +1,19 @@
+digraph "product-container" {
+  node [shape="box",style="rounded",fontname="Helvetica",fontsize="14"]
+  edge [fontsize="10",fontname="Helvetica"]
+
+  // Node Definitions:
+  "com.core.banking.system:product-container:jar"[label=<product-container>]
+  "com.core.banking.system:product-domain-core:jar"[label=<product-domain-core>]
+  "com.core.banking.system:product-application-service:jar"[label=<product-application-service>]
+  "com.core.banking.system:product-application:jar"[label=<product-application>]
+  "com.core.banking.system:product-dataaccess:jar"[label=<product-dataaccess>]
+  "com.core.banking.system:product-messaging:jar"[label=<product-messaging>]
+
+  // Edge Definitions:
+  "com.core.banking.system:product-container:jar" -> "com.core.banking.system:product-domain-core:jar"
+  "com.core.banking.system:product-container:jar" -> "com.core.banking.system:product-application-service:jar"
+  "com.core.banking.system:product-container:jar" -> "com.core.banking.system:product-application:jar"
+  "com.core.banking.system:product-container:jar" -> "com.core.banking.system:product-dataaccess:jar"
+  "com.core.banking.system:product-container:jar" -> "com.core.banking.system:product-messaging:jar"
+}

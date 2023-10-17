@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="product-application-service" />
+        <module name="common-application" />
+        <module name="product-domain-core" />
+        <module name="product-messaging" />
+        <module name="common-domain" />
+        <module name="product-container" />
+        <module name="product-application" />
+        <module name="product-dataaccess" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common" options="" />
+      <module name="common-application" options="-parameters" />
+      <module name="common-domain" options="-parameters" />
+      <module name="core-banking-system" options="" />
+      <module name="product-application" options="-parameters" />
+      <module name="product-application-service" options="-parameters" />
+      <module name="product-container" options="-parameters" />
+      <module name="product-dataaccess" options="-parameters" />
+      <module name="product-domain" options="" />
+      <module name="product-domain-core" options="-parameters" />
+      <module name="product-messaging" options="-parameters" />
+      <module name="product-service" options="" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,9 @@
+digraph "core-banking-system" {
+  node [shape="box",style="rounded",fontname="Helvetica",fontsize="14"]
+  edge [fontsize="10",fontname="Helvetica"]
+
+  // Node Definitions:
+  "com.core.banking.system:core-banking-system:pom"[label=<core-banking-system>]
+
+  // Edge Definitions:
+}

@@ -1,0 +1,9 @@
+digraph "product-service" {
+  node [shape="box",style="rounded",fontname="Helvetica",fontsize="14"]
+  edge [fontsize="10",fontname="Helvetica"]
+
+  // Node Definitions:
+  "com.core.banking.system:product-service:pom"[label=<product-service>]
+
+  // Edge Definitions:
+}
